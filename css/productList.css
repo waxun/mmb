@@ -1,0 +1,237 @@
+/*
+* @Author: zhuhw
+* @Date:   2016-11-28 12:03:35
+* @Last Modified by:   Administrator
+* @Last Modified time: 2016-11-28 16:48:33
+*/
+.mmm-header{
+	width: 100%;
+	height: 43px;
+	background-color: #ff841d;
+	/* padding-top: 10px;
+	padding-left: 15px; */
+
+}
+.mmm-header .mmm-header-log{
+	width: 50%;
+	height: 22px;
+	background: url(../images/header_logo.png) no-repeat;
+	background-size: 50% 22px;
+	margin-top: 10px;
+	margin-left: 14px;
+}
+.mmm-header-download{
+	width: 30px;
+	height: 32px;
+	margin-top: 7px;	
+	margin-right: 17px;
+}
+/* mmm-search 开始 */
+.mmm-search{
+	width: 100%;
+	height: 44px;
+	text-align: center;
+}
+.mmm-search .mmm-search-right{
+	width: 63px;
+	height: 100%;
+	text-align: center;
+}
+.mmm-search .mmm-search-right input[type='button']{
+	width: 56px;
+	height: 26px;
+	background-color: #fd8521;
+	margin-top: 10px;
+	border-radius: 13px;
+	font-size: 14px;
+	color: #eff6f0;
+}
+.mmm-search .mmm-search-left{
+	height: 100%;
+	margin-right: 63px;
+}
+.mmm-search .mmm-search-left .mmm-search-text{
+	width: 100%;
+	height: 100%;
+	padding:10px;
+	box-sizing: border-box;
+}
+.mmm-search .mmm-search-left .mmm-search-text input{
+	width: 100%;
+	height: 100%;
+	font-size: 12px;
+	color: #aeaeae;
+	padding-left: 17px;
+	box-sizing: border-box;
+	background-color: #f1f1f1;
+	border-radius: 15px;
+}
+/* mmm-search 结束 */
+
+/* mmm-container 开始 */
+.mmm-container{
+	
+	font-family: 'microsoft yahei';
+}
+.mmm-container .mmm-container-bread{
+	background: -webkit-linear-gradient(top,#dadada,#f3f1f0);
+	line-height: 32px;
+}
+.mmm-container .mmm-container-bread-left{
+	height: 32px;
+	color: #1c1c1c;
+	margin-right: 60px;
+	padding-left: 7px;
+}
+.mmm-container .mmm-container-bread a{
+	font-size: 14px;
+	color: #1c1c1c;
+}
+.mmm-container .mmm-container-bread-right{
+	width: 60px;
+	height: 32px;
+}
+.mmm-container .mmm-container-bread-right input{
+	width: 53px;
+	height: 25px;
+	text-align: center;
+	line-height: 25px;
+	border-radius: 6px;
+	background: -webkit-linear-gradient(top,#dadada,#f3f1f0);
+}
+.mmm-container .mmm-container-productlist{
+	width: 100%;
+
+
+}
+/*就来一个左边固定，右边自适应*/
+.mmm-container-productlist ul li{
+	width: 100%;
+	height: 100px;
+	border-bottom: 1px solid #afafaf;
+	overflow: hidden;
+}
+.mmm-container-productlist ul li .mmm-container-productlist-imgs {
+	padding: 10px;
+	width: 100px;
+	height: 100%;
+	box-sizing: border-box;
+}
+.mmm-container-productlist ul li .mmm-container-productlist-imgs img{
+	height: 80px;
+}
+.mmm-container-productlist ul li .mmm-container-productlist-info {
+	margin-left: 100px;
+	height: 100%;
+}
+.mmm-container-productlist ul li .mmm-container-productlist-info .product-name{
+	color: #5c5c5c;
+	font-size: 13px;
+	font-family: 'microsoft yahei';
+	line-height: 24px;
+}
+.mmm-container-productlist ul li .mmm-container-productlist-info .product-price{
+	color: #e65f67;
+	font-size: 11px;
+	font-family: 'microsoft yahei';
+	line-height: 24px;
+}
+.mmm-container-productlist ul li .mmm-container-productlist-info .other{
+	font-size: 11px;
+	font-family: 'microsoft yahei';
+	line-height: 24px;
+}
+.mmm-container-productlist ul li .mmm-container-productlist-info .other a{
+	color: #a7a7a7;
+	margin-right: 8px;
+}
+/*空数据提示信息设置样式*/
+.product-reminder{
+	font-size: 16px;
+	color: #ccc;
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	display: none;
+}
+/* pagenation 开始 */
+.mmm-container-productlist .pagenation{
+	width: 100%;
+	height: 43px;
+}
+.mmm-container-productlist .pagenation .pagenation-prev{
+	height: 100%;
+}
+.mmm-container-productlist .pagenation .pagenation-prev input,.mmm-container-productlist .pagenation .pagenation-next input{
+	width: 83px;
+	height: 33px;
+	background-color: #d8d8d8;
+	border: 1px solid #dcdcdc;
+	margin-top: 10px;
+	margin-left: 20px;
+	border-radius: 8px;
+	font-size: 13px;
+	color: #000000;
+}
+.mmm-container-productlist .pagenation .pagenation-next{
+	height: 100%;
+}
+.mmm-container-productlist .pagenation .pagenation-center{
+	height: 100%;
+	text-align: center;
+}
+
+.mmm-container-productlist .pagenation .pagenation-center .options{
+	width: 75px;
+	height: 34px;
+	border: 1px solid #bababa;
+	margin-top: 10px;
+	text-align: center;
+	padding-left: 20px;
+	box-sizing: border-box;
+}
+.mmm-container-productlist .pagenation .pagenation-center .options option{
+	width: 100%;
+	border: 1px solid #bababa;
+}
+/* pagenation 结束 */
+/* mmm-container 结束 */
+
+/* mmm-footer 开始 */
+.mmm-footer{
+	/*width: 100%;
+	position: fixed;
+	bottom: 0;*/
+	/* left: 0; */
+	margin-top: 20px;
+}
+.mmm-footer .mmm-footer-bar{
+	width: 100%;
+	height: 50px;
+	background-color: #efefef;
+	box-sizing: border-box;
+}
+.mmm-footer .mmm-footer-bar .mmm-footer-bar-cont{
+	height: 26px;
+	width: 100%;
+	border: 1px solid #cccccc;
+	border-right: none;
+}
+.mmm-footer .mmm-footer-bar .mm-footer-login,.mmm-footer .mmm-footer-bar .mm-footer-regist,.mmm-footer .mmm-footer-bar .mm-footer-backtop{
+	font-size: 12px;
+	color: #111111;
+	height: 26px;
+	text-align: center;
+	line-height: 26px;
+	border-right: 1px solid #cccccc;
+	box-sizing: border-box;
+}
+.mmm-footer .mmm-footer-downapp .downapp{
+	text-align: center;
+	margin-top: 12px;
+}
+.mmm-footer .mmm-footer-downapp .mmm-index{
+	text-align: center;
+	margin-top: 5px;
+}
+/* mmm-footer 结束 */

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+把ajax本身提取成一个方法，success里的逻辑通过回调函数执行
+function mainAjax(successFun){}
+function mainAjax( successFun ){
+$.ajax({
+url:'xxxx/api/xxx',
+data:{xx:xxx},
+type:'json',
+success:function(data){
+successFun(data);
+}
+});
+}
+
+
+function xxxx(data){
+mainAjax(function(){
+//处理成功的逻辑
+});
+}
+</body>
+</html>

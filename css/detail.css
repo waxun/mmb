@@ -1,0 +1,197 @@
+/*
+* @Author: zhuhw
+* @Date:   2016-11-28 16:49:55
+* @Last Modified by:   Administrator
+* @Last Modified time: 2016-11-28 19:50:12
+*/
+html,body{
+	height: 1000px;
+}
+.mmm-container-bread{
+	background: -webkit-linear-gradient(top,#dadada,#f3f1f0);
+	line-height: 32px;
+}
+.mmm-container-bread-left{
+	height: 32px;
+	color: #1c1c1c;
+	margin-right: 60px;
+	padding-left: 7px;
+}
+.mmm-container-bread a{
+	font-size: 14px;
+	color: #1c1c1c;
+}
+.mmm-container-bread-right{
+	width: 60px;
+	height: 32px;
+}
+.mmm-container-bread-right input{
+	width: 53px;
+	height: 25px;
+	text-align: center;
+	line-height: 25px;
+	border-radius: 6px;
+	background: -webkit-linear-gradient(top,#dadada,#f3f1f0);
+}
+/*上面是面包屑公共部分*/
+
+/*商品图片部分*/
+.mmm-detail-container .mmm-detail-product-info{
+	width: 100%;
+}
+.mmm-detail-container .mmm-detail-product-info .product-info-name{
+	width: 100%;
+	height: 53px;
+	padding-top: 15px;
+	padding-left: 20px;
+	padding-right: 20px;
+	text-align: center;
+	box-sizing: border-box;
+	color: #3e3e3e;
+}
+.mmm-detail-container .mmm-detail-product-info .product-info-img{
+	width: 100%;
+	box-sizing: border-box;
+	text-align: center;
+}
+.mmm-detail-container .mmm-detail-product-info .product-info-img a{
+	display: inline-block;
+	/*如果想给一些padding，则是要给a标签外面进行给出*/
+	padding-left: 80px;
+	padding-right: 80px;
+}
+/*商品图片部分结束*/
+.mmm-detail-product-tab{
+	height: 30px;
+	width: 100%;
+	border: 1px solid #bd4d00;
+	border-right: none;
+}
+.mmm-detail-product-tab .product-tab-buy ,.mmm-detail-product-tab .product-tab-param,.mmm-detail-product-tab .product-tab-common{
+	font-size: 12px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	border-right: 1px solid #bd4d00;
+	box-sizing: border-box;
+	background-color: #fe9c1f;
+}
+.mmm-detail-product-tab .product-tab-buy a,.mmm-detail-product-tab .product-tab-param a,.mmm-detail-product-tab .product-tab-common a{
+	color: #ffeedb;
+}
+.mmm-detail-product-tab .product-tab-param,.mmm-detail-product-tab .product-tab-common{
+	background-color: #ffcc3f;
+}
+/*商品价格信息*/
+
+.mmm-detail-product-price{
+	width: 100%;
+
+	border-bottom: 1px solid #ccc;
+}
+.mmm-detail-product-price .mmm-detail-product-price-top{
+	width: 100%;
+	/*height: 38px;*/
+	border: 1px solid #cecece;
+	/*padding-top: 12px;*/
+	box-sizing: border-box;
+}
+.mmm-detail-product-price .mmm-detail-product-price-top table{
+	height: 38px;
+}
+.mmm-detail-product-price .mmm-detail-product-price-top table td img{
+	width: 16px;
+	margin-left: 10px;
+	margin-top: 5px;
+}
+.mmm-detail-product-price .mmm-detail-product-price-top .detail-product-price-jdlink .jd-logo{
+	width: 16px;
+	height: 16px;
+	background: url(../images/jd.jpg) no-repeat;
+	margin-left: 2px;
+	margin-right: 4px;
+}
+.mmm-detail-product-price .mmm-detail-product-price-top .detail-product-price-buy .product-price{
+	color: #d6161d;
+	margin-right: 15px;
+}
+.mmm-detail-product-price .mmm-detail-product-price-top .detail-product-price-buy .price-buy-btn{
+	width: 47px;
+	height: 21px;
+	
+}
+.mmm-detail-product-price .mmm-detail-product-price-top .detail-product-price-buy .price-buy-btn input{
+	width: 100%;
+	height: 100%;
+	border-radius: 5px;
+	background-color: #fe5601;
+	color: #f4d4c2;
+	text-align: center;
+}
+.mmm-detail-product-price-bottom{
+	line-height: 16px;
+	padding: 10px;
+	color: #989898;
+
+}
+/*商品信息完成*/
+
+/*商品评价开始*/
+/* 商品评价结束 */
+.product-common {
+
+}
+.product-common .product-common-title{
+	width: 100%;
+	height: 35px;
+	background-color: #dbdbdb;
+	color: #090909;
+	text-align: center;
+	line-height: 35px;
+}
+.product-common .product-common-list{
+	
+}
+.product-common .product-common-list li{
+
+	width: 100%;
+	border-bottom: 1px solid #d0caca;
+	padding:10px;
+	box-sizing: border-box;
+}
+#nullTips{
+	text-align: center;
+}
+.product-common .product-common-list li .common-list-title{
+	width: 100%;
+	height: 50px;
+	line-height: 17px;
+}
+.product-common .product-common-list li .common-list-title .common-list-title-con,.purchase-by{
+	height: 17px;
+}
+.product-common .product-common-list li .common-list-content{
+	line-height: 22px;
+}
+
+/* 加载更多评价 开始 */
+.product-common .product-common-addmore{
+	width: 100%;
+	height: 32px;
+	text-align: center;
+	line-height: 32px;
+	padding-left: 7px;
+	padding-right: 7px;
+	box-sizing: border-box;
+}
+.product-common .product-common-addmore input{
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+	background-color: #e1e1e1;
+	margin-top: 15px;
+}
+.product-common-list-container li .ellipsis3 {
+	-webkit-line-clamp: 3;
+}
+/* 加载更多评价 结束 */

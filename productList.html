@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!--<script src="js/rem_zhuhw.js"></script>-->
+    <script src="js/zepto.js"></script>
+    <script src='js/template-native.js'></script>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/productList.css">
+</head>
+<body>
+<!-- mmm-header  开始 -->
+<div class="mmm-header">
+    <div class="mmm-header-log fl">
+
+    </div>
+    <div class="mmm-header-download fr">
+        <a href="#">
+            <img src="images/header_app.png">
+        </a>
+    </div>
+</div>
+<!-- mmm-header  结束 -->
+<!-- mmm-search 开始 -->
+<div class="mmm-search">
+    <div class="mmm-search-right fr">
+        <input type="button" value="搜索">
+    </div>
+    <div class="mmm-search-left">
+        <div class="mmm-search-text">
+            <input type="text" placeholder='请输入categoryid,为数值类型'>
+        </div>
+    </div>
+
+</div>
+<!-- mmm-search 结束 -->
+
+<!-- mmm-container 开始 -->
+<div class="mmm-container">
+    <!-- mmm-container-bread 开始 -->
+    <div class="mmm-container-bread">
+        <div class="mmm-container-bread-right fr">
+            <input type="button" value="筛选">
+        </div>
+        <div class="mmm-container-bread-left">
+            <a href="#">首页</a>&gt;
+            <a href="#">全部分类</a>&gt;
+            <a href="#" id="categoryApi">默认值</a>
+        </div>
+
+    </div>
+    <!-- mmm-container-bread 结束 -->
+    <!-- mmm-container-productlist 开始 -->
+    <div class="mmm-container-productlist">
+        <ul class="productlist" id="productlistUl">
+        </ul>
+        <!--如果数据为空，进行的提示信息-->
+        <div id="productReminder" class="product-reminder">
+            对不起....我们没有找到相关的商品
+        </div>
+        <!-- pagenation 开始 -->
+        <div class="pagenation" id="pagenationId">
+            <div class="pagenation-prev w_33 fl">
+                <a href="#">
+                    <input type="button" value="上一页">
+                </a>
+            </div>
+            <div class="pagenation-center w_33 fl">
+                <select name="" id="options" class="options">
+                </select>
+            </div>
+            <div class="pagenation-next w_33 fl">
+                <a href="#">
+                    <input type="button" value="下一页">
+                </a>
+            </div>
+        </div>
+        <!-- pagenation 结束 -->
+    </div>
+    <!-- mmm-container-productlist 结束 -->
+</div>
+<!-- mmm-container 结束 -->
+
+<!-- mmm-footer 开始 -->
+<div class="mmm-footer">
+    <div class="mmm-footer-bar">
+        <div class="mmm-footer-bar-cont">
+            <div class="mm-footer-login w_33 fl">
+                <a href="#" class="">登录</a>
+            </div>
+            <div class="mm-footer-regist w_33 fl">
+                <a href="#" class="">注册</a>
+            </div>
+            <div class="mm-footer-backtop w_33 fl">
+                <a href="#" class="">返回顶部</a>
+            </div>
+        </div>
+
+    </div>
+    <div class="mmm-footer-downapp">
+        <p class="downapp">
+            <a href="#">手机APP下载</a>
+            <a href="#">慢慢买手机版</a>
+            <a href="#">掌上比价平台</a>
+        </p>
+
+        <p class="mmm-index">
+            <a href="#">m.mmm.com</a>
+        </p>
+    </div>
+</div>
+<!-- mmm-footer   <%= lists[i].productImg %>结束 -->
+
+<!--商品列表模板-->
+<script type="text/html" id="productListTmpl">
+    <% for (var i = 0; i < lists.length; i++) { %>
+    <li>
+        <div class="mmm-container-productlist-imgs fl">
+            <a href="http://localhost/project/detail.html?productid=<%=lists[i].productId%>">
+                <%=# lists[i].productImg %>
+            </a>
+        </div>
+        <a href="http://localhost/project/detail.html?productid=<%=lists[i].productId%>">
+            <div class="mmm-container-productlist-info">
+                <p class="product-name txt_cut txt_cut_2">
+                    <%= lists[i].productName %>
+                </p>
+
+                <p class="product-price">
+                    <%= lists[i].productPrice %>
+                </p>
+
+                <p class="other">
+                    <a href="#"><%= lists[i].productQuote %></a>
+                    <a href="#"><%= lists[i].productCom %></a>
+                </p>
+            </div>
+        </a>
+    </li>
+    <% }  %>
+</script>
+<!--productList script-->
+<script src="js/productList.js"></script>
+</body>
+</html>

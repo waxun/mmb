@@ -1,0 +1,111 @@
+/*
+* @Author: zhuhw
+* @Date:   2016-11-28 16:54:54
+* @Last Modified by:   Administrator
+* @Last Modified time: 2016-11-28 19:50:24
+*/
+.mmm-header{
+	width: 100%;
+	height: 43px;
+	background-color: #ff841d;
+	/* padding-top: 10px;
+	padding-left: 15px; */
+
+}
+.mmm-header .mmm-header-log{
+	width: 50%;
+	height: 22px;
+	background: url(../images/header_logo.png) no-repeat;
+	background-size: 50% 22px;
+	margin-top: 10px;
+	margin-left: 14px;
+}
+.mmm-header-download{
+	width: 30px;
+	height: 32px;
+	margin-top: 7px;	
+	margin-right: 17px;
+}
+/* mmm-search 开始 */
+.mmm-search{
+	width: 100%;
+	height: 44px;
+	text-align: center;
+}
+.mmm-search .mmm-search-right{
+	width: 63px;
+	height: 100%;
+	text-align: center;
+}
+.mmm-search .mmm-search-right input[type='button']{
+	width: 56px;
+	height: 26px;
+	background-color: #fd8521;
+	margin-top: 10px;
+	border-radius: 13px;
+	font-size: 14px;
+	color: #eff6f0;
+}
+.mmm-search .mmm-search-left{
+	height: 100%;
+	margin-right: 63px;
+}
+.mmm-search .mmm-search-left .mmm-search-text{
+	width: 100%;
+	height: 100%;
+	padding:10px;
+	box-sizing: border-box;
+}
+.mmm-search .mmm-search-left .mmm-search-text input{
+	width: 100%;
+	height: 100%;
+	font-size: 12px;
+	color: #aeaeae;
+	padding-left: 17px;
+	box-sizing: border-box;
+	background-color: #f1f1f1;
+	border-radius: 15px;
+}
+/* mmm-search 结束 */
+/* mmm-footer 开始 */
+.mmm-footer{
+	width: 100%;
+	margin-top: 20px;
+	/*position: fixed;
+	bottom: 0;*/
+	/* left: 0; */
+	background-color: #efefef;
+}
+.mmm-footer .mmm-footer-bar{
+	width: 100%;
+	height: 50px;
+	background-color: #efefef;
+	/* padding-top: 22px; */
+	box-sizing: border-box;
+}
+.mmm-footer .mmm-footer-bar .mmm-footer-bar-cont{
+	height: 26px;
+	width: 100%;
+	border: 1px solid #cccccc;
+	border-right: none;
+}
+.mmm-footer .mmm-footer-bar .mm-footer-login,.mmm-footer .mmm-footer-bar .mm-footer-regist,.mmm-footer .mmm-footer-bar .mm-footer-backtop{
+	font-size: 12px;
+	color: #111111;
+	height: 26px;
+	text-align: center;
+	line-height: 26px;
+	border-right: 1px solid #cccccc;
+	box-sizing: border-box;
+}
+.mmm-footer .mmm-footer-downapp .downapp{
+	text-align: center;
+	margin-top: 12px;
+}
+.mmm-footer .mmm-footer-downapp .mmm-index{
+	text-align: center;
+	margin-top: 5px;
+}
+/* mmm-footer 结束 */
+
+/*上面是头尾合搜索部分*/

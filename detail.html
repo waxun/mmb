@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!--<script src="js/rem_zhuhw.js"></script>-->
+    <script src="js/zepto.js"></script>
+    <script src='js/template-native.js'></script>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/detail.css">
+</head>
+<body>
+<!-- mmm-header  开始 -->
+<div class="mmm-header">
+    <div class="mmm-header-log fl">
+    </div>
+    <div class="mmm-header-download fr">
+        <a href="#">
+            <img src="images/header_app.png">
+        </a>
+    </div>
+</div>
+<!-- mmm-header  结束 -->
+<!-- mmm-search 开始 -->
+<div class="mmm-search">
+    <div class="mmm-search-right fr">
+        <input type="button" value="搜索">
+    </div>
+    <div class="mmm-search-left">
+        <div class="mmm-search-text">
+            <input type="text" placeholder='请输入你想比价的商品'>
+        </div>
+    </div>
+
+</div>
+<!-- mmm-search 结束 -->
+
+<div class="mmm-detail-container">
+    <!-- mmm-container-bread 开始 -->
+    <div class="mmm-container-bread">
+        <div class="mmm-container-bread-right fr">
+            <!--<input type="button" value="筛选">-->
+        </div>
+        <div class="mmm-container-bread-left">
+            <a href="#">首页</a>&gt;
+            <a href="#">全部分类</a>&gt;
+            <a href="#">电视</a>
+        </div>
+    </div>
+    <!-- mmm-container-bread 结束 -->
+
+    <div class="mmm-detail-product-info">
+        <p class="product-info-name"></p>
+
+        <p class="product-info-img">
+            <a href="#">
+
+            </a>
+        </p>
+
+    </div>
+    <div class="mmm-detail-product-tab">
+        <div class="product-tab-buy w_33 fl">
+            <a href="#" class="">比较购买</a>
+        </div>
+        <div class="product-tab-param w_33 fl">
+            <a href="#" class="">产品参数</a>
+        </div>
+        <div class="product-tab-common w_33 fl">
+            <a href="#" class="">评价(<span class="commonnum"></span>)</a>
+        </div>
+    </div>
+    <!-- 商品价格信息开始 -->
+    <div class="mmm-detail-product-price">
+        <div class="mmm-detail-product-price-top">
+        </div>
+        <div class="mmm-detail-product-price-bottom">
+            天地精华矿泉水采自安徽六安大别山地区地下深处，偏硅酸和微量元素锶含量均较高，PH值7.2±0.5。
+            天地精华矿泉水采自安徽六安大别山地区地下深处，偏硅酸和微量元素锶含量均较高，PH值7.2±0.5。
+        </div>
+    </div>
+    <!-- 商品价格信息结束 -->
+</div>
+
+
+<!-- 商品评价开始 -->
+<div class="product-common">
+    <div class="product-common-title">
+        <h4>商品评价</h4>
+    </div>
+    <div class="product-common-list">
+        <ul class="product-common-list-container">
+            <!-- 第一条商品评价开始 -->
+            <!--<li>
+                <div class="common-list-title">
+                    <div class="common-list-title-con">
+                        <p class="common-list-username fl">
+                            自带BGM的男人
+                        </p>
+                        <p class="common-list-time fr">
+                            2016/11/23 19:06:19
+                        </p>
+                    </div>
+                    <div class="purchase-by fr">
+                        购买自:<span>京东商城</span>
+                    </div>
+                </div>
+                <div class="common-list-content">
+                    天地精华矿泉水采自安徽六安大别山地区地下深处
+                    天地精华矿泉水采自安徽六安大别山地区地下深处
+                    天地精华矿
+                </div>
+            </li>-->
+            <!-- 第一条商品评价结束 -->
+
+            <!-- 第一条商品评价开始 -->
+            <!--<li>
+                <div class="common-list-title">
+                    <div class="common-list-title-con">
+                        <p class="common-list-username fl">
+                            自带BGM的男人
+                        </p>
+                        <p class="common-list-time fr">
+                            2016/11/23 19:06:19
+                        </p>
+                    </div>
+                    <div class="purchase-by fr">
+                        购买自:<span>京东商城</span>
+                    </div>
+                </div>
+                <div class="common-list-content">
+                    天地精华矿泉水采自安徽六安大别山地区地下深处
+                    天地精华矿泉水采自安徽六安大别山地区地下深处
+                    天地精华矿
+                </div>
+            </li>-->
+            <!-- 第一条商品评价结束 -->
+
+
+        </ul>
+    </div>
+
+    <!-- 加载更多评价 -->
+    <div class="product-common-addmore">
+        <input type="button" value="查看更多评价">
+    </div>
+</div>
+<!-- 商品评价结束 -->
+
+<!--随便加的-->
+<div id="bjShop"></div>
+<!-- mmm-footer 开始 -->
+<div class="mmm-footer">
+    <div class="mmm-footer-bar">
+        <div class="mmm-footer-bar-cont">
+            <div class="mm-footer-login w_33 fl">
+                <a href="#" class="">登录</a>
+            </div>
+            <div class="mm-footer-regist w_33 fl">
+                <a href="#" class="">注册</a>
+            </div>
+            <div class="mm-footer-backtop w_33 fl">
+                <a href="#" class="">返回顶部</a>
+            </div>
+        </div>
+    </div>
+    <div class="mmm-footer-downapp">
+        <p class="downapp">
+            <a href="#">手机APP下载</a>
+            <a href="#">慢慢买手机版</a>
+            <a href="#">掌上比价平台</a>
+        </p>
+
+        <p class="mmm-index">
+            <a href="#">m.mmm.com</a>
+        </p>
+    </div>
+</div>
+<!-- mmm-footer 结束 -->
+<script src="js/detail.js"></script>
+
+<script type="text/html" id="commonTmpl">
+    <% for(var i=0;i
+    <lists.length;i++){ %>
+    <li>
+        <div class="common-list-title">
+            <div class="common-list-title-con">
+                <p class="common-list-username fl">
+                    <%= lists[i].comName %>
+                </p>
+
+                <p class="common-list-time fr">
+                    <%= lists[i].comTime %>
+                </p>
+            </div>
+            <div class="purchase-by fr">
+                购买自:<span><%= lists[i].comFrom %></span>
+            </div>
+        </div>
+        <div class="common-list-content txt_cut ellipsis3">
+            <%= lists[i].comContent %>
+        </div>
+    </li>
+    <% } %>
+</script>
+</body>
+</html>
