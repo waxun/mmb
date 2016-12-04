@@ -27,10 +27,10 @@ function subStr(url) {
     }
     return obj;
 }
-cid = subStr(window.location.href).categoryid;
-temppageid = subStr(window.location.href).pageid || 1;
-/*cid = subStr('http://mmb.ittun.com/api/getproductlist?categoryid=1&pageid=1').categoryid;
- temppageid = subStr('http://mmb.ittun.com/api/getproductlist?categoryid=1').pageid||1;*/
+/*cid = subStr(window.location.href).categoryid;
+temppageid = subStr(window.location.href).pageid || 1;*/
+cid = subStr('http://mmb.ittun.com/api/getproductlist?categoryid=1&pageid=1').categoryid;
+ temppageid = subStr('http://mmb.ittun.com/api/getproductlist?categoryid=1').pageid||1;
 console.log(cid, temppageid);
 fnAjax(cid, temppageid);
 getThreeCategory(cid);
