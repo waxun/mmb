@@ -73,7 +73,7 @@ function fnAjax(cid, temppageid) {
             categoryid: cid,
             pageid: temppageid
         },
-        dataType: 'json',
+        dataType: 'jsonp',
         success: function (obj) {
             if (obj.totalCount == 0) {
                 $('#productlistUl').html('');
@@ -164,7 +164,7 @@ function getThreeCategory(cid) {
         data: {
             categoryid: cid
         },
-        dataType: 'json',
+        dataType: 'jsonp',
         success: function (obj) {
             console.log(obj);
             var r = obj.result[0].category;
